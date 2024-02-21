@@ -44,5 +44,5 @@ jobs:
           java-version: '17'
           distribution: 'corretto'
 
-      - run: chmod +x format.sh
+      - run: git update-index --chmod=+x format.sh
       - run: ./format.sh && git diff --exit-code
